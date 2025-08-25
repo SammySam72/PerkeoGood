@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulario SENA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,27 +13,55 @@
         <form>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <label for="edad">Edad:</label>
             <input type="number" id="edad" name="edad" required>
-            <label for="option">Seleccione una opción:</label>
-            <select id="option" >
+
+            <label for="opcion1">Seleccione una opción:</label>
+            <select id="opcion1" name="opcion1">
                 <option disabled selected>Escoja una</option>
-                <option>Si</option>
+                <option>Sí</option>
                 <option>No</option>
                 <option>Tal vez</option>
             </select>
+
             <p>¿Planea comprar un nuevo carro en los próximos 5 años?</p>
             <div class="radios">
-                <label><input type="radio">Si</label>
-                <label><input type="radio">No</label>
-                <label><input type="radio">Tal vez</label>
+                <label><input type="radio" name="compra-carro">Sí</label>
+                <label><input type="radio" name="compra-carro">No</label>
+                <label><input type="radio" name="compra-carro">Tal vez</label>
             </div>
 
-            <label for="option">¿Cuál es su marca de carro favorita?</label>
-            <select id="option">
+            <label for="marca-carro">¿Cuál es su marca de carro favorita?</label>
+            <select id="marca-carro" name="marca-carro">
                 <option disabled selected>Escoja una</option>
+                <option>BMW</option>
+                <option>Toyota</option>
+                <option>Chevrolet</option>
+                <option>Audi</option>
+            </select>
+
+            <p>¿Qué medios de transporte tiene disponibles?</p>
+            <div class="checkbox">
+                <label><input type="checkbox" name="transporte" value="carro">Carro</label>
+                <label><input type="checkbox" name="transporte" value="bote">Bote</label>
+                <label><input type="checkbox" name="transporte" value="bicicleta">Bicicleta</label>
+                <label><input type="checkbox" name="transporte" value="moto">Moto</label>
+                <label><input type="checkbox" name="transporte" value="avion">Avión</label>
+            </div>
+            
+            <br>
+            <label for="sugerencias">¿Alguna sugerencia o comentario?</label>
+            <textarea id="sugerencias" name="sugerencias" placeholder="Por favor, ingrese su sugerencia"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
                 <option>BMW</option>
                 <option>Toyota</option>
                 <option>Chevrolet</option>
